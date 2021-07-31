@@ -1,0 +1,34 @@
+{
+  "name": "week-04",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "lite": "lite-server",
+    "start": "npm run lite",
+    "sass": "sass assets/scss/styles.scss assets/css/styles.css",
+    "watch:scss": "onchange 'assets/scss/*.scss' -- npm run sass",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kingluddite/nc-week-four-review.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kingluddite/nc-week-four-review/issues"
+  },
+  "homepage": "https://github.com/kingluddite/nc-week-four-review#readme",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "lite-server": "^2.6.1",
+    "onchange": "^7.1.0",
+    "parallelshell": "^3.0.2",
+    "sass": "^1.37.0"
+  }
+}
